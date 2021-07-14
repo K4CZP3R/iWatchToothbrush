@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFC89A4B269F0C8E00ECE49C /* kacper WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AFC89A4A269F0C8E00ECE49C /* kacper WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFC89A50269F0C9000ECE49C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC89A4F269F0C9000ECE49C /* Assets.xcassets */; };
+		AFC89A56269F0C9000ECE49C /* kacper WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AFC89A55269F0C9000ECE49C /* kacper WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFC89A5B269F0C9000ECE49C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC89A5A269F0C9000ECE49C /* ContentView.swift */; };
+		AFC89A5D269F0C9000ECE49C /* kacperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC89A5C269F0C9000ECE49C /* kacperApp.swift */; };
+		AFC89A5F269F0C9000ECE49C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC89A5E269F0C9000ECE49C /* ComplicationController.swift */; };
+		AFC89A61269F0C9100ECE49C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC89A60269F0C9100ECE49C /* Assets.xcassets */; };
+		AFC89A64269F0C9100ECE49C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC89A63269F0C9100ECE49C /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFC89A4C269F0C8E00ECE49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC89A40269F0C8E00ECE49C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFC89A49269F0C8E00ECE49C;
+			remoteInfo = "kacper WatchKit App";
+		};
+		AFC89A57269F0C9000ECE49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC89A40269F0C8E00ECE49C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFC89A54269F0C9000ECE49C;
+			remoteInfo = "kacper WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFC89A6B269F0C9100ECE49C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AFC89A56269F0C9000ECE49C /* kacper WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC89A6F269F0C9100ECE49C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AFC89A4B269F0C8E00ECE49C /* kacper WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AFC89A46269F0C8E00ECE49C /* kacper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kacper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC89A4A269F0C8E00ECE49C /* kacper WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kacper WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC89A4F269F0C9000ECE49C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFC89A55269F0C9000ECE49C /* kacper WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "kacper WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC89A5A269F0C9000ECE49C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFC89A5C269F0C9000ECE49C /* kacperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kacperApp.swift; sourceTree = "<group>"; };
+		AFC89A5E269F0C9000ECE49C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AFC89A60269F0C9100ECE49C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFC89A63269F0C9100ECE49C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFC89A65269F0C9100ECE49C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFC89A52269F0C9000ECE49C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFC89A3F269F0C8E00ECE49C = {
+			isa = PBXGroup;
+			children = (
+				AFC89A4E269F0C8E00ECE49C /* kacper WatchKit App */,
+				AFC89A59269F0C9000ECE49C /* kacper WatchKit Extension */,
+				AFC89A47269F0C8E00ECE49C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFC89A47269F0C8E00ECE49C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFC89A46269F0C8E00ECE49C /* kacper.app */,
+				AFC89A4A269F0C8E00ECE49C /* kacper WatchKit App.app */,
+				AFC89A55269F0C9000ECE49C /* kacper WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFC89A4E269F0C8E00ECE49C /* kacper WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AFC89A4F269F0C9000ECE49C /* Assets.xcassets */,
+			);
+			path = "kacper WatchKit App";
+			sourceTree = "<group>";
+		};
+		AFC89A59269F0C9000ECE49C /* kacper WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AFC89A5A269F0C9000ECE49C /* ContentView.swift */,
+				AFC89A5C269F0C9000ECE49C /* kacperApp.swift */,
+				AFC89A5E269F0C9000ECE49C /* ComplicationController.swift */,
+				AFC89A60269F0C9100ECE49C /* Assets.xcassets */,
+				AFC89A65269F0C9100ECE49C /* Info.plist */,
+				AFC89A62269F0C9100ECE49C /* Preview Content */,
+			);
+			path = "kacper WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AFC89A62269F0C9100ECE49C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AFC89A63269F0C9100ECE49C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFC89A45269F0C8E00ECE49C /* kacper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC89A70269F0C9100ECE49C /* Build configuration list for PBXNativeTarget "kacper" */;
+			buildPhases = (
+				AFC89A44269F0C8E00ECE49C /* Resources */,
+				AFC89A6F269F0C9100ECE49C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFC89A4D269F0C8E00ECE49C /* PBXTargetDependency */,
+			);
+			name = kacper;
+			productName = kacper;
+			productReference = AFC89A46269F0C8E00ECE49C /* kacper.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		AFC89A49269F0C8E00ECE49C /* kacper WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC89A6C269F0C9100ECE49C /* Build configuration list for PBXNativeTarget "kacper WatchKit App" */;
+			buildPhases = (
+				AFC89A48269F0C8E00ECE49C /* Resources */,
+				AFC89A6B269F0C9100ECE49C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFC89A58269F0C9000ECE49C /* PBXTargetDependency */,
+			);
+			name = "kacper WatchKit App";
+			productName = "kacper WatchKit App";
+			productReference = AFC89A4A269F0C8E00ECE49C /* kacper WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AFC89A54269F0C9000ECE49C /* kacper WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC89A68269F0C9100ECE49C /* Build configuration list for PBXNativeTarget "kacper WatchKit Extension" */;
+			buildPhases = (
+				AFC89A51269F0C9000ECE49C /* Sources */,
+				AFC89A52269F0C9000ECE49C /* Frameworks */,
+				AFC89A53269F0C9000ECE49C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kacper WatchKit Extension";
+			productName = "kacper WatchKit Extension";
+			productReference = AFC89A55269F0C9000ECE49C /* kacper WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFC89A40269F0C8E00ECE49C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					AFC89A45269F0C8E00ECE49C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					AFC89A49269F0C8E00ECE49C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					AFC89A54269F0C9000ECE49C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = AFC89A43269F0C8E00ECE49C /* Build configuration list for PBXProject "kacper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFC89A3F269F0C8E00ECE49C;
+			productRefGroup = AFC89A47269F0C8E00ECE49C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFC89A45269F0C8E00ECE49C /* kacper */,
+				AFC89A49269F0C8E00ECE49C /* kacper WatchKit App */,
+				AFC89A54269F0C9000ECE49C /* kacper WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFC89A44269F0C8E00ECE49C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC89A48269F0C8E00ECE49C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC89A50269F0C9000ECE49C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC89A53269F0C9000ECE49C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC89A64269F0C9100ECE49C /* Preview Assets.xcassets in Resources */,
+				AFC89A61269F0C9100ECE49C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFC89A51269F0C9000ECE49C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC89A5B269F0C9000ECE49C /* ContentView.swift in Sources */,
+				AFC89A5D269F0C9000ECE49C /* kacperApp.swift in Sources */,
+				AFC89A5F269F0C9000ECE49C /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFC89A4D269F0C8E00ECE49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFC89A49269F0C8E00ECE49C /* kacper WatchKit App */;
+			targetProxy = AFC89A4C269F0C8E00ECE49C /* PBXContainerItemProxy */;
+		};
+		AFC89A58269F0C9000ECE49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFC89A54269F0C9000ECE49C /* kacper WatchKit Extension */;
+			targetProxy = AFC89A57269F0C9000ECE49C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AFC89A66269F0C9100ECE49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFC89A67269F0C9100ECE49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFC89A69269F0C9100ECE49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kacper WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NYSBRSGD6C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kacper WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "kacper WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.k4cczp3r.kacper.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		AFC89A6A269F0C9100ECE49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kacper WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NYSBRSGD6C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kacper WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "kacper WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.k4cczp3r.kacper.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		AFC89A6D269F0C9100ECE49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NYSBRSGD6C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = kacper_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "kacper WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.k4cczp3r.kacper.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		AFC89A6E269F0C9100ECE49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NYSBRSGD6C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = kacper_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "kacper WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.k4cczp3r.kacper.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		AFC89A71269F0C9100ECE49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NYSBRSGD6C;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.k4cczp3r.kacper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AFC89A72269F0C9100ECE49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NYSBRSGD6C;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.k4cczp3r.kacper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFC89A43269F0C8E00ECE49C /* Build configuration list for PBXProject "kacper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC89A66269F0C9100ECE49C /* Debug */,
+				AFC89A67269F0C9100ECE49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFC89A68269F0C9100ECE49C /* Build configuration list for PBXNativeTarget "kacper WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC89A69269F0C9100ECE49C /* Debug */,
+				AFC89A6A269F0C9100ECE49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFC89A6C269F0C9100ECE49C /* Build configuration list for PBXNativeTarget "kacper WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC89A6D269F0C9100ECE49C /* Debug */,
+				AFC89A6E269F0C9100ECE49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFC89A70269F0C9100ECE49C /* Build configuration list for PBXNativeTarget "kacper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC89A71269F0C9100ECE49C /* Debug */,
+				AFC89A72269F0C9100ECE49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFC89A40269F0C8E00ECE49C /* Project object */;
+}

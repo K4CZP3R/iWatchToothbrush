@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AF7D9364269F11DF00440E42 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7D9363269F11DF00440E42 /* BLEManager.swift */; };
+		AF8E596526A03DF6000FA8AF /* KspNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E596426A03DF6000FA8AF /* KspNotifications.swift */; };
+		AF8E596926A042FB000FA8AF /* ToothbrushSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E596826A042FB000FA8AF /* ToothbrushSelectorView.swift */; };
+		AF8E596B26A04779000FA8AF /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E596A26A04779000FA8AF /* ConfigurationView.swift */; };
+		AF8E596D26A0485A000FA8AF /* KspUserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E596C26A0485A000FA8AF /* KspUserStorage.swift */; };
 		AFB8B75C269F6828004F9F8A /* KspToothbrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8B75B269F6828004F9F8A /* KspToothbrush.swift */; };
 		AFC89A4B269F0C8E00ECE49C /* kacper WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AFC89A4A269F0C8E00ECE49C /* kacper WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AFC89A50269F0C9000ECE49C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC89A4F269F0C9000ECE49C /* Assets.xcassets */; };
@@ -63,6 +67,10 @@
 
 /* Begin PBXFileReference section */
 		AF7D9363269F11DF00440E42 /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		AF8E596426A03DF6000FA8AF /* KspNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KspNotifications.swift; sourceTree = "<group>"; };
+		AF8E596826A042FB000FA8AF /* ToothbrushSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToothbrushSelectorView.swift; sourceTree = "<group>"; };
+		AF8E596A26A04779000FA8AF /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		AF8E596C26A0485A000FA8AF /* KspUserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KspUserStorage.swift; sourceTree = "<group>"; };
 		AFB8B75B269F6828004F9F8A /* KspToothbrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KspToothbrush.swift; sourceTree = "<group>"; };
 		AFC89A46269F0C8E00ECE49C /* kacper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kacper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC89A4A269F0C8E00ECE49C /* kacper WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kacper WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,8 +149,12 @@
 			children = (
 				AFC89A5A269F0C9000ECE49C /* ContentView.swift */,
 				AF7D9363269F11DF00440E42 /* BLEManager.swift */,
+				AF8E596426A03DF6000FA8AF /* KspNotifications.swift */,
 				AFB8B75B269F6828004F9F8A /* KspToothbrush.swift */,
 				AFC89A5C269F0C9000ECE49C /* kacperApp.swift */,
+				AF8E596826A042FB000FA8AF /* ToothbrushSelectorView.swift */,
+				AF8E596A26A04779000FA8AF /* ConfigurationView.swift */,
+				AF8E596C26A0485A000FA8AF /* KspUserStorage.swift */,
 				AFC89A5E269F0C9000ECE49C /* ComplicationController.swift */,
 				AFC89A60269F0C9100ECE49C /* Assets.xcassets */,
 				AFC89A65269F0C9100ECE49C /* Info.plist */,
@@ -289,10 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC89A5B269F0C9000ECE49C /* ContentView.swift in Sources */,
+				AF8E596526A03DF6000FA8AF /* KspNotifications.swift in Sources */,
 				AF7D9364269F11DF00440E42 /* BLEManager.swift in Sources */,
 				AFB8B75C269F6828004F9F8A /* KspToothbrush.swift in Sources */,
 				AFC89A5D269F0C9000ECE49C /* kacperApp.swift in Sources */,
+				AF8E596B26A04779000FA8AF /* ConfigurationView.swift in Sources */,
 				AFC89A5F269F0C9000ECE49C /* ComplicationController.swift in Sources */,
+				AF8E596926A042FB000FA8AF /* ToothbrushSelectorView.swift in Sources */,
+				AF8E596D26A0485A000FA8AF /* KspUserStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

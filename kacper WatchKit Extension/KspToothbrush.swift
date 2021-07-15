@@ -7,61 +7,74 @@
 
 import Foundation
 import SwiftUI
+import CoreBluetooth
 
 
 public class KspToothbrush: ObservableObject {
     @ObservedObject var bluetoothManager = BLEManager()
+    var toothbrushPeripheral: CBPeripheral?
+    var kspNotifications = KspNotifications()
+    var toothbrushId: UUID
     
-    
-    func fetchQuadrant() -> UInt8 {
-        let keyExists = bluetoothManager.manufacturerData["33C9C672-14BE-97A0-69F8-E48E04576571"] != nil
+    init(toothbrushId: UUID){
         
-        if keyExists {
-            print("Toothbrush was seen!")
-            
-            return bluetoothManager.manufacturerData["33C9C672-14BE-97A0-69F8-E48E04576571"]![10]
-            
-            
-        }
-        print("Still no toothbrush!")
-        return 0
-    }
-    func fetchTooHard() -> Bool {
-        let keyExists = bluetoothManager.manufacturerData["33C9C672-14BE-97A0-69F8-E48E04576571"] != nil
+        self.toothbrushId = toothbrushId
         
-        if keyExists {
-            print("Toothbrush was seen!")
-            
-            return bluetoothManager.manufacturerData["33C9C672-14BE-97A0-69F8-E48E04576571"]![6] == 192
-            
-            
-        }
-        print("Still no toothbrush!")
-        return false
-    }
-    func fetchNewestTime() -> UInt8 {
-        let keyExists = bluetoothManager.manufacturerData["33C9C672-14BE-97A0-69F8-E48E04576571"] != nil
+        NotificationCenter.default.addObserver(self, selector: #selector(onBluetoothDeviceConnected(_:)), name: Notification.Name(KspNotificationTypes.BluetoothDeviceConnected.rawValue), object: nil)
         
-        if keyExists {
-            print("Toothbrush was seen!")
-            
-            return bluetoothManager.manufacturerData["33C9C672-14BE-97A0-69F8-E48E04576571"]![8]
-            
-            
-        }
-        print("Still no toothbrush!")
-        return 0
+        NotificationCenter.default.addObserver(self, selector: #selector(onBluetoothDeviceConnecting(_:)), name: Notification.Name(KspNotificationTypes.BluetoothDeviceConnecting.rawValue), object: nil)
         
-    }
+        NotificationCenter.default.addObserver(self, selector: #selector(onBluetoothDeviceConnectingFail(_:)), name: Notification.Name(KspNotificationTypes.BluetoothDeviceConnectingFail.rawValue), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onBluetoothScanningStarted(_:)), name: Notification.Name(KspNotificationTypes.BluetoothScanningStarted.rawValue), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onBluetoothScanningStopped(_:)), name: Notification.Name(KspNotificationTypes.BluetoothScanningStopped.rawValue), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onBluetoothDeviceFound(_:)), name: Notification.Name(KspNotificationTypes.BluetoothDeviceFound.rawValue), object: nil)
+        
+        
+        
+        
 
+    }
     
+    @objc func onBluetoothDeviceFound(_ notification: Notification) {
+        for fd in bluetoothManager.foundDevices {
+            if fd.id == toothbrushId {
+                print("Found toothbrush!")
+                bluetoothManager.connectToPeripheral(cbperipheral: fd.peripheral)
+                return
+            }
+        }
+        
+        print("Still no toothbrush...")
+    }
     
-    func startListening(){
-        print("Starting disco")
+    @objc func onBluetoothDeviceConnected(_ notification: Notification) {
+        print("Bluetooth device connected!")
+    }
+    
+    @objc func onBluetoothDeviceConnecting(_ notification: Notification) {
+        print("Bluetooth device connecting!")
+    }
+    
+    @objc func onBluetoothDeviceConnectingFail(_ notification: Notification){
+        print("Bluetooth device connecting fail!")
+    }
+    
+    @objc func onBluetoothScanningStarted(_ notification: Notification) {
+        print("Bluetooth device scan start!")
+    }
+    
+    @objc func onBluetoothScanningStopped(_ notification: Notification){
+        print("Bluetooth device scan stop!")
+    }
+    
+    func startScanningForToothbrush(){
         bluetoothManager.startScanning()
     }
     
-    func stopListening(){
+    func stopScanningForToothbrush(){
         bluetoothManager.stopScanning()
     }
 }

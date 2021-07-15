@@ -12,6 +12,10 @@
 		AF8E596926A042FB000FA8AF /* ToothbrushSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E596826A042FB000FA8AF /* ToothbrushSelectorView.swift */; };
 		AF8E596B26A04779000FA8AF /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E596A26A04779000FA8AF /* ConfigurationView.swift */; };
 		AF8E596D26A0485A000FA8AF /* KspUserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E596C26A0485A000FA8AF /* KspUserStorage.swift */; };
+		AF8E596F26A0A67A000FA8AF /* BinUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E596E26A0A67A000FA8AF /* BinUtils.swift */; };
+		AF8E597126A0ACB5000FA8AF /* ToothbrushInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E597026A0ACB5000FA8AF /* ToothbrushInfoView.swift */; };
+		AF8E597326A0ACCA000FA8AF /* CircleProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E597226A0ACCA000FA8AF /* CircleProgressBarView.swift */; };
+		AF8E597726A0E514000FA8AF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E597626A0E514000FA8AF /* Helpers.swift */; };
 		AFB8B75C269F6828004F9F8A /* KspToothbrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8B75B269F6828004F9F8A /* KspToothbrush.swift */; };
 		AFC89A4B269F0C8E00ECE49C /* kacper WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AFC89A4A269F0C8E00ECE49C /* kacper WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AFC89A50269F0C9000ECE49C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC89A4F269F0C9000ECE49C /* Assets.xcassets */; };
@@ -71,6 +75,10 @@
 		AF8E596826A042FB000FA8AF /* ToothbrushSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToothbrushSelectorView.swift; sourceTree = "<group>"; };
 		AF8E596A26A04779000FA8AF /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
 		AF8E596C26A0485A000FA8AF /* KspUserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KspUserStorage.swift; sourceTree = "<group>"; };
+		AF8E596E26A0A67A000FA8AF /* BinUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinUtils.swift; sourceTree = "<group>"; };
+		AF8E597026A0ACB5000FA8AF /* ToothbrushInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToothbrushInfoView.swift; sourceTree = "<group>"; };
+		AF8E597226A0ACCA000FA8AF /* CircleProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBarView.swift; sourceTree = "<group>"; };
+		AF8E597626A0E514000FA8AF /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		AFB8B75B269F6828004F9F8A /* KspToothbrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KspToothbrush.swift; sourceTree = "<group>"; };
 		AFC89A46269F0C8E00ECE49C /* kacper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kacper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC89A4A269F0C8E00ECE49C /* kacper WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kacper WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,10 +155,13 @@
 		AFC89A59269F0C9000ECE49C /* kacper WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AF8E597026A0ACB5000FA8AF /* ToothbrushInfoView.swift */,
 				AFC89A5A269F0C9000ECE49C /* ContentView.swift */,
+				AF8E597626A0E514000FA8AF /* Helpers.swift */,
 				AF7D9363269F11DF00440E42 /* BLEManager.swift */,
 				AF8E596426A03DF6000FA8AF /* KspNotifications.swift */,
 				AFB8B75B269F6828004F9F8A /* KspToothbrush.swift */,
+				AF8E596E26A0A67A000FA8AF /* BinUtils.swift */,
 				AFC89A5C269F0C9000ECE49C /* kacperApp.swift */,
 				AF8E596826A042FB000FA8AF /* ToothbrushSelectorView.swift */,
 				AF8E596A26A04779000FA8AF /* ConfigurationView.swift */,
@@ -159,6 +170,7 @@
 				AFC89A60269F0C9100ECE49C /* Assets.xcassets */,
 				AFC89A65269F0C9100ECE49C /* Info.plist */,
 				AFC89A62269F0C9100ECE49C /* Preview Content */,
+				AF8E597226A0ACCA000FA8AF /* CircleProgressBarView.swift */,
 			);
 			path = "kacper WatchKit Extension";
 			sourceTree = "<group>";
@@ -301,12 +313,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC89A5B269F0C9000ECE49C /* ContentView.swift in Sources */,
+				AF8E597126A0ACB5000FA8AF /* ToothbrushInfoView.swift in Sources */,
+				AF8E596F26A0A67A000FA8AF /* BinUtils.swift in Sources */,
 				AF8E596526A03DF6000FA8AF /* KspNotifications.swift in Sources */,
 				AF7D9364269F11DF00440E42 /* BLEManager.swift in Sources */,
+				AF8E597326A0ACCA000FA8AF /* CircleProgressBarView.swift in Sources */,
 				AFB8B75C269F6828004F9F8A /* KspToothbrush.swift in Sources */,
 				AFC89A5D269F0C9000ECE49C /* kacperApp.swift in Sources */,
 				AF8E596B26A04779000FA8AF /* ConfigurationView.swift in Sources */,
 				AFC89A5F269F0C9000ECE49C /* ComplicationController.swift in Sources */,
+				AF8E597726A0E514000FA8AF /* Helpers.swift in Sources */,
 				AF8E596926A042FB000FA8AF /* ToothbrushSelectorView.swift in Sources */,
 				AF8E596D26A0485A000FA8AF /* KspUserStorage.swift in Sources */,
 			);

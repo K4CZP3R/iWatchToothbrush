@@ -10,13 +10,21 @@ import Foundation
 enum KspNotificationTypes : String {
     case ToothbrushConnected
     case ToothbrushConnecting
+    case ToothbrushConnectingFail
+    case ToothbrushDisconnected
     case BluetoothDeviceConnecting
     case BluetoothDeviceConnected
     case BluetoothDeviceConnectingFail
     case BluetoothScanningStarted
     case BluetoothScanningStopped
     case BluetoothDeviceFound
+    case BluetoothDeviceDisconnected
     case ToothbrushSelected
+    case BluetoothCharUpdate
+    case ToothbrushUpdate
+    case RequestCachedToothbrushDatas
+    case CachedToothbrushDatas
+    case DoVibrate
 }
 
 class KspNotifications {
